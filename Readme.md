@@ -66,7 +66,7 @@ In this section, you import Bing Maps API as a environment variable and setup [G
 
 1. Under **Libraries**, click **Install New**.
 
-1. On the popup, click **PyPI**, input `pip install geocoder`, and click **Install**.
+1. On the popup, click **PyPI**, input `geocoder`, and click **Install**.
 
     ![Install Geocoder](image/geocoder-install.png "Install Geocoder")
 
