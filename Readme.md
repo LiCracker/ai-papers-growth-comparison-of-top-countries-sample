@@ -1,13 +1,13 @@
 ---
-title: AI papers growth comparison of top countries sample (PySpark)
-description: AI papers growth comparison of top countries (PySpark)
+title: Topic paper growth by country sample (PySpark)
+description: Draw papers growth comparison figure of top countries (PySpark)
 language: Python
 products: Azure
-ms.date: 06/08/2020
+date: 06/12/2020
 ---
-# AI Papers Growth Comparison of Top Countries (PySpark)
+# Topic Paper Growth by Country Sample (PySpark)
 
-In this sample, you draw AI papers growth comparison figure of various countries in Microsoft Academic Graph (MAG) using Azure Databricks.
+In this sample, you draw papers growth comparison figure of various countries using Microsoft Academic Graph (MAG) on Azure Databricks.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Complete these tasks before you begin this tutorial:
 
 * Setting up Azure Databricks service. See [Set up Azure Databricks](https://docs.microsoft.com/academic-services/graph/get-started-setup-databricks).
 
-* Setting up Bing Maps API Key. See [Create a Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key). Before using this API, review the [Geocode and Data Source Limits](https://docs.microsoft.com/en-us/bingmaps/spatial-data-services/geocode-and-data-source-limits)
+* Setting up Bing Maps API Key. See [Create a Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key). Before using this API, review the [Bing Maps API Rate Limit](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-api-best-practices#rate-limiting). It will consume about 12,000 transactions if we choose "artificial intelligence" as target topic.
 
 ## Gather the information that you need
 
@@ -52,7 +52,7 @@ In this section, you import PySparkMagClass.py as a shared notebook in Azure Dat
    > [!NOTE]
    > When importing this notebook under **Shared** folder. The full path of this notebook is `"/Shared/PySparkMagClass"`. If you import it under other folders, note the actual full path and use it in following sections.
 
-## Setup Databricks Environment Variable and Library
+## Setup Databricks environment variable and library
 In this section, you import Bing Maps API as a environment variable and setup [Geocoder](https://geocoder.readthedocs.io/index.html) as a cluster's library in Azure Databricks workspace.
 
 1. In Azure Databricks workspace portal, from **Clusters** > **Interactive Clusters**, click the cluster you created.
@@ -70,15 +70,15 @@ In this section, you import Bing Maps API as a environment variable and setup [G
 
     ![Install Geocoder](image/geocoder-install.png "Install Geocoder")
 
-## Run PySparkAIPapersGrowthComparison sample notebook
+## Run TopicPaperGrowthByCountry sample notebook
 
-In this section, you import PySparkAIPapersGrowthComparison.py as a notebook in Azure Databricks workspace and run the notebook.
+In this section, you import TopicPaperGrowthByCountry.py as a notebook in Azure Databricks workspace and run the notebook.
 
-1. Save **`PySparkAIPapersGrowthComparison.py`** in MAG dataset to local drive.
+1. Save **`TopicPaperGrowthByCountry.py`** in MAG dataset to local drive.
 
 1. In Azure Databricks workspace portal, from the **Workspace** > **Users** > **Your folder** drop-down, select **Import**.
 
-1. Drag and drop PySparkAIPapersGrowthComparison.py to the **Import Notebook** dialog box.
+1. Drag and drop TopicPaperGrowthByCountry.py to the **Import Notebook** dialog box.
 
 1. Replace `<AzureStorageAccount>`, `<AzureStorageAccessKey>`, and `<MagContainer>` placeholder values with the values that you collected while completing the prerequisites of this sample.
 
@@ -88,7 +88,7 @@ In this section, you import PySparkAIPapersGrowthComparison.py as a notebook in 
    |**`<AzureStorageAccessKey>`** | The access key of your Azure Storage account. |
    |**`<MagContainer>`** | The container name in Azure Storage account containing MAG dataset, usually in the form of **mag-yyyy-mm-dd**. |
 
-1. Click **Run All** button.
+1. Click **Run All** button. It could take about 20-30 minutes to run on standard cluster. 
 
 1. You see an output similar to the following snippet:
 
