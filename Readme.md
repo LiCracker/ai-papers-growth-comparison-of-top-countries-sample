@@ -1,6 +1,6 @@
 ---
 title: Topic paper growth by country sample (PySpark)
-description: Draw papers growth comparison figure of top countries (PySpark)
+description: Draw paper growth comparison figure of top countries (PySpark)
 language: Python
 products: Azure
 date: 06/12/2020
