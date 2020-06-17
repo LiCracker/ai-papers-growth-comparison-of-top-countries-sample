@@ -74,7 +74,7 @@ In this section, you import Bing Maps API as a environment variable and setup [G
 
 In this section, you import TopicPaperGrowthByCountry.py as a notebook in Azure Databricks workspace and run the notebook.
 
-1. Save **`TopicPaperGrowthByCountry.py`** in MAG dataset to local drive.
+1. Save **`samples/TopicPaperGrowthByCountry.py`** in MAG dataset to local drive.
 
 1. In Azure Databricks workspace portal, from the **Workspace** > **Users** > **Your folder** drop-down, select **Import**.
 
