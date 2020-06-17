@@ -2,16 +2,16 @@
 # MAGIC %md # Topic Paper Growth By Country
 # MAGIC 
 # MAGIC To run this notebook:
-# MAGIC   - [Create an Azure Databricks service](https://azure.microsoft.com/en-us/services/databricks/).
+# MAGIC   - [Create an Azure Databricks service](https://azure.microsoft.com/services/databricks/).
 # MAGIC   - [Create a cluster for the Azure Databricks service](https://docs.azuredatabricks.net/user-guide/clusters/create.html).
-# MAGIC   - [Create a Bing Maps API Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
+# MAGIC   - [Create a Bing Maps API Key](https://www.microsoft.com/maps/create-a-bing-maps-key).
 # MAGIC   - Add Bing Maps API to Databricks Cluster Environment Variables
 # MAGIC   - Install Geocoder to Cluster Libraries
 # MAGIC   - [Import](https://docs.databricks.com/user-guide/notebooks/notebook-manage.html#import-a-notebook) samples/PySparkMagClass.py under Workspace **Shared** folder.
 # MAGIC   - [Import](https://docs.databricks.com/user-guide/notebooks/notebook-manage.html#import-a-notebook) this notebook.
 # MAGIC   - Replace **`<AzureStorageAccount>`**. This is the Azure Storage account containing MAG dataset.
 # MAGIC   - Replace **`<AzureStorageAccessKey>`**. This is the Access Key of the Azure Storage account.
-# MAGIC   - Replace **`<MagContainer>`**. This is the container name in Azure Storage account containing MAG dataset, Usually in forms of mag-yyyy-mm-dd.
+# MAGIC   - Replace **`<MagContainer>`**. This is the container name in Azure Storage account containing MAG dataset, usually in forms of mag-yyyy-mm-dd.
 # MAGIC   - Attach this notebook to the cluster and run.
 
 # COMMAND ----------
@@ -23,7 +23,7 @@
 
 AzureStorageAccount = '<AzureStorageAccount>'     # Azure Storage (AS) account containing MAG dataset
 AzureStorageAccessKey = '<AzureStorageAccessKey>' # Access Key of the Azure Storage account
-MagContainer = '<MagContainer>'                   # The container name in Azure Storage (AS) account containing MAG dataset, Usually in forms of mag-yyyy-mm-dd
+MagContainer = '<MagContainer>'                   # The container name in Azure Storage (AS) account containing MAG dataset, usually in forms of mag-yyyy-mm-dd
 FosNormalizedName = 'artificial intelligence'
 
 # COMMAND ----------

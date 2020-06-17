@@ -1,13 +1,13 @@
 ---
 title: Topic paper growth by country sample (PySpark)
-description: Draw papers growth comparison figure of top countries (PySpark)
+description: Draw paper growth comparison figure of top countries (PySpark)
 language: Python
 products: Azure
 date: 06/12/2020
 ---
 # Topic Paper Growth by Country Sample (PySpark)
 
-In this sample, you draw papers growth comparison figure of various countries using Microsoft Academic Graph (MAG) on Azure Databricks.
+In this sample, you draw paper growth comparison figure of various countries using Microsoft Academic Graph (MAG) on Azure Databricks.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Complete these tasks before you begin this tutorial:
 
 * Setting up Azure Databricks service. See [Set up Azure Databricks](https://docs.microsoft.com/academic-services/graph/get-started-setup-databricks).
 
-* Setting up Bing Maps API Key. See [Create a Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key). Before using this API, review the [Bing Maps API Rate Limit](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-api-best-practices#rate-limiting). It will consume about 12,000 transactions if we choose "artificial intelligence" as target topic.
+* Setting up Bing Maps API Key. See [Create a Bing Maps Key](https://www.microsoft.com/maps/create-a-bing-maps-key). Before using this API, review the [Bing Maps API Rate Limit](https://docs.microsoft.com/bingmaps/getting-started/bing-maps-api-best-practices#rate-limiting). It will consume about 12,000 transactions if we choose "artificial intelligence" as target topic.
 
 ## Gather the information that you need
 
@@ -35,7 +35,7 @@ Complete these tasks before you begin this tutorial:
 
 In this section, you import PySparkMagClass.py as a shared notebook in Azure Databricks workspace. You will run this utility notebook from another notebook later.
 
-1. Save **`PySparkMagClass.py`** in MAG dataset to local drive.
+1. Save **`samples/PySparkMagClass.py`** in MAG dataset to local drive.
 
 1. In the [Azure portal](https://portal.azure.com), go to the Azure Databricks service that you created, and select **Launch Workspace**.
 
@@ -74,7 +74,7 @@ In this section, you import Bing Maps API as a environment variable and setup [G
 
 In this section, you import TopicPaperGrowthByCountry.py as a notebook in Azure Databricks workspace and run the notebook.
 
-1. Save **`TopicPaperGrowthByCountry.py`** in MAG dataset to local drive.
+1. Save **`samples/TopicPaperGrowthByCountry.py`** in MAG dataset to local drive.
 
 1. In Azure Databricks workspace portal, from the **Workspace** > **Users** > **Your folder** drop-down, select **Import**.
 
