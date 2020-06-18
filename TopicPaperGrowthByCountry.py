@@ -72,7 +72,7 @@ PapersWithAffiId = magPaperAuthorAffiliations \
 # COMMAND ----------
 
 # get distinct AffiliationIds
-AffiliationIds = PapersWithAffiId.where(PapersWithAffiId.select("AffiliationId").distinct()
+AffiliationIds = PapersWithAffiId.select("AffiliationId").distinct()
 
 # join magAffiliations to get affiliation latitude and longitude
 Affiliations = magAffiliations \
